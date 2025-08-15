@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://y06dg6tgqiw2"]
+
+[ext_resource type="Script" uid="uid://kol6k5y6rb8a" path="res://addons/addons/softbody2d/softbody2d.gd" id="1_j5sal"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="SoftBody2D" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(494, 259, 448, 223, 471, 174, 531, 164, 545.392, 195.427, 563.056, 233.999, 580, 271, 539, 306)
+script = ExtResource("1_j5sal")
+metadata/_custom_type_script = "uid://kol6k5y6rb8a"
