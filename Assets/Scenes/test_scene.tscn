@@ -1,3 +1,17 @@
-[gd_scene format=3 uid="uid://d11ufvco6dhwa"]
+[gd_scene load_steps=3 format=3 uid="uid://d11ufvco6dhwa"]
+
+[ext_resource type="PackedScene" uid="uid://y06dg6tgqiw2" path="res://Assets/Player/Slime.tscn" id="1_c7w1r"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_gjict"]
 
 [node name="Test Scene" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(523.955, 432.952)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_gjict")
+
+[node name="Slime" parent="." instance=ExtResource("1_c7w1r")]
+position = Vector2(496, 40)
+rotation = 0.781396
